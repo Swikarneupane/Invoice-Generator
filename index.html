@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Invoice Generator</title>
+</head>
+<body>
+    <main>
+        <section id="top">
+            <h1>Invoice creator</h1>
+            <p>Thanks for choosing GoodCorps,LLC!</p>
+        </section>
+        <section id="bottom">
+            <div id="buttonWrapper">
+                <button id="washCarBtn">Wash Car: $10</button>
+                <button id="mowLawnBtn">Mow Lawn: $20</button>
+                <button id="pullWeedsBtn">Pull Weeds: $30</button>
+            </div>
+            <div id="receipts">
+                <div id="first">
+                    <p>TASK</p>
+                    <span>TOTAL</span>
+                </div>
+                <div id="second">
+                    <p>Wash Car</p>
+                    <button id="removeWashCar">Remove</button>
+                    <span id="washCar">$10</span>
+                </div>
+                <div id="third">
+                    <p>Mow Lawn</p>
+                    <button id="removeMowLawn">Remove</button>
+                    <span id="mowLawn">$20</span>
+                </div>
+                <div id="fourth">
+                    <p>Pull Weeds</p>
+                    <button id="removePullWeeds">Remove</button>
+                    <span id="pullWeeds">$30</span>
+                </div>
+
+                <hr class="hor-line">
+
+                <div id="fifth">
+                    <p>NOTES</p>
+                    <span>TOTAL AMOUNT</span>
+                </div>
+                <div id="sixth">
+                    <p>We accept cash, credit card or paypal.</p>
+                    <span id="totMoney">$60</span>
+                </div>
+                <button id="send-invoice"><svg class="change-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg> Send Invoice</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
